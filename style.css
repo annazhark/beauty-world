@@ -55,7 +55,7 @@ a:hover {
     gap: 0px 28px;
 }
 
-.navigarion-link {
+.navigation-link {
     font-size: 14px;
     font-weight: 500;
 }
@@ -216,3 +216,21 @@ a:hover {
     width: 296px;
 }
 
+/* FOOTER */
+
+.footer-list {
+    list-style: none;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    gap: 0px 28px;
+    
+}
+
+.footer-menu {
+    
+    width: 1110px;
+    display:flex;
+    justify-content:flex-end;
+}
