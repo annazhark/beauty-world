@@ -1,0 +1,32 @@
+{
+  "name": "beauty-world",
+  "version": "1.0.0",
+  "description": "The beauty world",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annazhark/beauty-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annazhark/beauty-world/issues"
+  },
+  "homepage": "https://github.com/annazhark/beauty-world#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.0"
+  }
+}
