@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мир красоты</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/style.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
@@ -16,7 +15,7 @@
 
   <body>
     <header class="header-page">
-      <div class="container">
+      <div class="header-container">
         <div class="header-top">
           <a class="header-logo" href="./index.html">Мир красоты</a>
         
@@ -58,12 +57,13 @@
           </div>
 
           <div class="header-image">
-            <img src="./images/header/girl.png" alt="" />
+            
+            <img class="header-image__main" src="./images/header/girl.png" alt="Девушка" />
           </div>
           <div class="social">
-            <img src="./images/header/instagram.svg" alt="" />
-            <img src="./images/header/vk.svg" alt="" />
-            <img src="./images/header/youtube.svg" alt="" />
+            <img src="./images/header/instagram.svg" alt="Ссылка на инстаграм" />
+            <img src="./images/header/vk.svg" alt="Ссылка на Вконтакте" />
+            <img src="./images/header/youtube.svg" alt="Ссылка на Ютуб" />
           </div>
         </div>
       </div>
@@ -378,6 +378,144 @@
       </div>
       
     </section>
+
+    <section class="works">
+      <div class="works__heading">
+        <p class="works__heading-desc">
+          Наши работы
+        </p>
+        <div class="Works__btns">
+          <button class="works__navigation-btn">
+            <img class="works__navigation-btn_left" src="./images/works/left.svg">
+          </button>
+
+          <button class="works__navigation-btn">
+            <img class="works__navigation-btn_right" src="./images/works/right.svg">
+
+          </button>
+        </div>
+      </div>
+
+      <div class="works__gallery">
+
+        <div class="works__gallery_container">
+          <img class="works__gallery-card" src="./images/works/makeup.png" alt="">
+          <div class="overlay">
+            <img class="works__search-icon" src="./images/works/search 1.svg" alt="">
+            <p class="works__gallery-overlay-text">Увеличить</p>
+          </div>
+        </div>
+
+        <div class="works__gallery_container">
+          <img class="works__gallery-card" src="./images/works/look.png" alt="">
+          <div class="overlay">
+            <img class="works__search-icon" src="./images/works/search 1.svg" alt="">
+            <p class="works__gallery-overlay-text">Увеличить</p>
+          </div>
+        </div>
+
+        <div class="works__gallery_container">
+          <img class="works__gallery-card" src="./images/works/nails.png" alt="">
+          <div class="overlay">
+            <img class="works__search-icon" src="./images/works/search 1.svg" alt="">
+            <p class="works__gallery-overlay-text">Увеличить</p>
+          </div>
+        </div>
+
+        <div class="works__gallery_container">
+          <img class="works__gallery-card" src="./images/works/hair.png" alt="">
+          <div class="overlay">
+            <img class="works__search-icon" src="./images/works/search 1.svg" alt="">
+            <p class="works__gallery-overlay-text">Увеличить</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="brands">
+      <div class="brands__heading">
+        <p class="brands__heading-title">Бренды, которые мы используем в работе
+
+        </p>
+      </div>
+
+      <div class="brands__list">
+        <img class="brands__list-card" src="./images/brands/image 1.svg" alt="">
+        <img class="brands__list-card" src="./images/brands/image 2.svg" alt="">
+        <img class="brands__list-card" src="./images/brands/image 3.svg" alt="">
+        <img class="brands__list-card" src="./images/brands/image 4.svg" alt="">
+        <img class="brands__list-card" src="./images/brands/image 5.svg" alt="">
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__header">
+        <div class="contacts__content">
+          <p class="contacts__header-title">
+            Контакты 
+          </p>
+        </div>
+
+        <div class="contacts__desc">
+          <p class="contacts__desc-adress">Томск, проспект Ленина, дом 13
+
+          </p>
+
+          <p class="contacts__desc-phone">8 (499) 686-17-62</p>
+
+          <p class="contacts__desc-email"></p><a href="mailto:info@more-krasoty.ru">info@more-krasoty.ru</a></p>
+
+
+        </div>
+
+        <div class="contacts__social">
+          <p class="contacts__social-desc">Мы в социальных сетях</p>
+
+          <ul class="contacts__social-list">
+            <img class="contacts__social-list-card" src="./images/header/vk.svg">
+            <img class="contacts__social-list-card" src="./images/header/instagram.svg">
+            <img class="contacts__social-list-card" src="./images/header/youtube.svg">
+          </ul>
+        </div>
+      </div>
+
+      <div class="form">
+        <form class="form__content" method="get">
+          <div class="form__content-header">
+            <p class="form__title">
+              Быстрая запись
+            </p>
+
+            <p class="form__desc">
+              Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.
+
+            </p>
+          </div>
+
+          <div class="form__data">
+
+            <div class="form__input">
+              <p>
+              
+                <input type="text" name="name" placeholder="Ваше имя" id="name" required>
+              </p>
+              
+              <p class="form__input-phone">
+
+                <form>
+                  <input type="tel" class="input-phone" placeholder="+7 (___) ___-__-__">
+                </form>
+              </p>
+              <button class="form__btn">Записаться</button>
+            </div>
+
+            <p class="form__politics">Нажимая на кнопку вы соглашаетесь с <a href="" class="form__politics-link">обработкой персональных данных</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
     
     
     <footer class="footer">
@@ -390,7 +528,7 @@
           </p>
         </div>
 
-        <div class="footer-menu">
+        <div class="footer__menu">
           <ul class="footer-list">
             <li class="footer-list-item">
               <a href="" class="footer-link">Услуги и цены</a>
