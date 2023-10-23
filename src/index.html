@@ -5,37 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мир красоты</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+
   </head>
 
+   
+
+
   <body>
+
     <header class="header-page">
       <div class="header-container">
+
         <div class="header-top">
-          <a class="header-logo" href="./index.html">Мир красоты</a>
+          
+          <div class="logo"><a class="header-logo" href="./index.html">Мир красоты</a></div>
+          
         
 
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-list-item">
-                <a href="" class="navigation-link">Услуги и цены</a>
+                <a href="#price-list" class="navigation-link">Услуги и цены</a>
               </li>
               <li class="navigation-list-item">
-                <a href="" class="navigation-link">Мастера</a>
+                <a href="#masters-list" class="navigation-link">Мастера</a>
               </li>
               <li class="navigation-list-item">
-                <a href="" class="navigation-link">Наши работы</a>
+                <a href="#works-list" class="navigation-link">Наши работы</a>
               </li>
               <li class="navigation-list-item">
-                <a href="" class="navigation-link">О нас</a>
+                <a href="#about-list" class="navigation-link">О нас</a>
               </li>
               <li class="navigation-list-item">
-                <a href="" class="navigation-link">Контакты</a>
+                <a href="#contact-list" class="navigation-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -47,6 +78,12 @@
 
             <span class="header-contacts__desc"> с 10.00 до 19.00 без выходных </span>
           </div>
+
+
+          <div class="header__burger-btn">
+            <span></span>
+          </div>
+
         </div>
 
         <div class="header-content">
@@ -70,27 +107,32 @@
     </header>
 
     <section class="about">
-      <div class="about-info">
-        <div class="about_heading">
-          <h1 class="about_header">О салоне</h1>
+      <div class="about-info-desc">
+        <div class="about-info">
+          <div class="about_heading">
+            <h1 class="about_header">О салоне</h1>
 
-          <p class="about_description">
-            Мир красоты - это уютный салон в самом центре города. Здесь работают
-            профессиональные визажисты, стилисты и мастера татуажа
-          </p>
+            <p class="about_description">
+              Мир красоты - это уютный салон в самом центре города. Здесь работают
+              профессиональные визажисты, стилисты и мастера татуажа
+            </p>
 
-          <p class="about_sub_description">
-            Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас
-            в место, где гармония обретает форму, а внешность становится
-            отражением внутреннего мира. Новая жизнь начинается с небольших
-            изменений. Мы помогаем нашим клиентам воплотить их индивидуальность
-            во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.
-          </p>
-        </div>
-
-        <img class="about_video" src="./images/about/bg1.png" alt="video" />
+            <p class="about_sub_description">
+              Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас
+              в место, где гармония обретает форму, а внешность становится
+              отражением внутреннего мира. Новая жизнь начинается с небольших
+              изменений. Мы помогаем нашим клиентам воплотить их индивидуальность
+              во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.
+            </p>
+          </div>
 
         
+
+          <div class="about-image">
+            <img class="about_video" src="./images/about/bg1.png" alt="video" />
+
+          </div>
+        </div>
       </div>
 
       <div class="about_cards">
@@ -131,56 +173,58 @@
 
     <section class="service">
       <p class="service-title">Популярные услуги</p>
-      <div class="service__cards">
-        <div class="service__card">
-          <img src="./images/service/service-icon.png" alt="">
+      <div class="serv-container">
+        <div class="service__cards">
+          <div class="service__card">
+            <img src="./images/service/service-icon.png" alt="">
 
-          <p class="service__card-title">Маникюр
-          </p>
-          <p class="service__service-card-desc">Аппаратный, комбинированный или классический.</p>
-          <button class="service__btn">Записаться</button>
+            <p class="service__card-title">Маникюр
+            </p>
+            <p class="service__service-card-desc">Аппаратный, комбинированный или классический.</p>
+            <button class="service__btn">Записаться</button>
 
-        </div>
+          </div>
 
-        <div class="service__card">
-          <img src="./images/service/service-icon.png" alt="">
+          <div class="service__card">
+            <img src="./images/service/service-icon.png" alt="">
 
-          <p class="service__card-title">Покрытие гель-лак
-          </p>
-          <p class="service__service-card-desc">Гель-лак наносится в несколько слоев с использование базы и топа. Каждый слой полимеризуется в LED-лампе.</p>
-          <button class="service__btn">Записаться</button>
+            <p class="service__card-title">Покрытие гель-лак
+            </p>
+            <p class="service__service-card-desc">Гель-лак наносится в несколько слоев с использование базы и топа. Каждый слой полимеризуется в LED-лампе.</p>
+            <button class="service__btn">Записаться</button>
 
-        </div>
+          </div>
 
-        <div class="service__card">
-          <img src="./images/service/service-icon.png" alt="">
+          <div class="service__card">
+            <img src="./images/service/service-icon.png" alt="">
 
-          <p class="service__card-title">Бразильский маникюр
-          </p>
-          <p class="service__service-card-desc">Выполняется в одноразовых перчатках наполненных увлажняющим лосьоном.</p>
-          <button class="service__btn">Записаться</button>
+            <p class="service__card-title">Бразильский маникюр
+            </p>
+            <p class="service__service-card-desc">Выполняется в одноразовых перчатках наполненных увлажняющим лосьоном.</p>
+            <button class="service__btn">Записаться</button>
 
-        </div>
+          </div>
 
-        <div class="service__card">
-          <img class="service__card-icon" src="./images/service/service-icon.png" alt="">
+          <div class="service__card">
+            <img class="service__card-icon" src="./images/service/service-icon.png" alt="">
 
-          <p class="service__card-title">Педикюр
-          </p>
-          <p class="service__service-card-desc">Аппаратный, комбинированный или классический.</p>
-          <button class="service__btn">Записаться</button>
+            <p class="service__card-title">Педикюр
+            </p>
+            <p class="service__service-card-desc">Аппаратный, комбинированный или классический.</p>
+            <button class="service__btn">Записаться</button>
 
-        </div>
+          </div>
 
-        <div class="service__card">
-          <img src="./images/service/service-icon.png" alt="">
+          <div class="service__card">
+            <img src="./images/service/service-icon.png" alt="">
 
-          <p class="service__card-title">Парафинотерапия
-          </p>
-          <p class="service__service-card-desc">Благодаря этой процедуре увлажнение кожи увеличивается на 80%, также выводит токсины и укрепляет суставы.
-          </p>
-          <button class="service__btn">Записаться</button>
+            <p class="service__card-title">Парафинотерапия
+            </p>
+            <p class="service__service-card-desc">Благодаря этой процедуре увлажнение кожи увеличивается на 80%, также выводит токсины и укрепляет суставы.
+            </p>
+            <button class="service__btn">Записаться</button>
 
+          </div>
         </div>
       </div>
     </section>
@@ -188,7 +232,7 @@
     <section class="price">
       
       <div class="price__heading">
-        <p class="price__heading-title">Услуги и цены</p>
+        <p class="price__heading-title" id="price-list">Услуги и цены</p>
       </div>
 
       <div class="price__navigation">
@@ -313,64 +357,64 @@
       <div class="masters__cards">
         <div class="masters__master-card">
           <img clas="master__icon" src="./images/masters/irina.png" alt="">
-          <div class="master__icon__centered">Записаться к мастеру
+          <div class="master__icon_centered">Записаться к мастеру
           </div>
-          <p class="master__master-card__name">Краснова Ирина
+          <p class="master__master-card-name">Краснова Ирина
 
           </p>
-          <p class="master__master-card__desc">Мастер ногтевого сервиса
+          <p class="master__master-card-desc">Мастер ногтевого сервиса
 
           </p>
 
-          <p class="master__master-card__exp">
+          <p class="master__master-card-exp">
             опыт работы 5 лет
           </p>
         </div>
 
         <div class="masters__master-card">
           <img src="./images/masters/zhanna.png" alt="">
-          <div class="master__icon__centered">Записаться к мастеру
+          <div class="master__icon_centered">Записаться к мастеру
           </div>
-          <p class="master__master-card__name">Калилова Жанна
+          <p class="master__master-card-name">Калилова Жанна
 
           </p>
-          <p class="master__master-card__desc">Визажист-стилист
+          <p class="master__master-card-desc">Визажист-стилист
 
           </p>
 
-          <p class="master__master-card__exp">
+          <p class="master__master-card-exp">
             опыт работы 5 лет
           </p>
         </div>
 
         <div class="masters__master-card">
           <img src="./images/masters/alina.png" alt="">
-          <div class="master__icon__centered">Записаться к мастеру
+          <div class="master__icon_centered">Записаться к мастеру
           </div>
-          <p class="master__master-card__name">Киселева Алина
+          <p class="master__master-card-name">Киселева Алина
 
           </p>
-          <p class="master__master-card__desc">Парикмахер
+          <p class="master__master-card-desc">Парикмахер
 
           </p>
 
-          <p class="master__master-card__exp">
+          <p class="master__master-card-exp">
             опыт работы 5 лет
           </p>
         </div>
 
         <div class="masters__master-card">
           <img src="./images/masters/elena.png" alt="">
-          <div class="master__icon__centered">Записаться к мастеру
+          <div class="master__icon_centered">Записаться к мастеру
           </div>
-          <p class="master__master-card__name">Иванова Елена
+          <p class="master__master-card-name">Иванова Елена
 
           </p>
-          <p class="master__master-card__desc">Мастер ногтевого сервиса
+          <p class="master__master-card-desc">Мастер ногтевого сервиса
 
           </p>
 
-          <p class="master__master-card__exp">
+          <p class="master__master-card-exp">
             опыт работы 5 лет
           </p>
         </div>
@@ -384,19 +428,21 @@
         <p class="works__heading-desc">
           Наши работы
         </p>
-        <div class="Works__btns">
-          <button class="works__navigation-btn">
-            <img class="works__navigation-btn_left" src="./images/works/left.svg">
+        
+        <div class="works__btns">
+          <button class="works__navigation-btn-prev">
+            <img class="works__navigation-btn_left" id="btnPrev"src="./images/works/left.svg">
           </button>
 
-          <button class="works__navigation-btn">
+          <button class="works__navigation-btn-nxt" id="btnNext">
             <img class="works__navigation-btn_right" src="./images/works/right.svg">
 
           </button>
         </div>
+      
       </div>
 
-      <div class="works__gallery">
+      <div class="works__gallery" id="slider">
 
         <div class="works__gallery_container">
           <img class="works__gallery-card" src="./images/works/makeup.png" alt="">
@@ -546,5 +592,27 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+
   </body>
 </html>

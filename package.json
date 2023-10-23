@@ -28,5 +28,9 @@
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.4.31",
     "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.24",
+    "jquery": "^3.7.1"
   }
 }
